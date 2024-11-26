@@ -1,10 +1,10 @@
 # Heimdall
 
-A collection of geolocation tools enabling the integration of different sources of information to identify and locate places.
+A collection of geolocation tools enabling the integration of different sources of information to identify and locate places on a map.
 
 ## Overall description
 
-The goal of this project is to regroup a set of OSINT Geotools to aggregate localisation data, bearings, distances, etc. in order to find and localise event and places.
+The goal of this project is to regroup a set of OSINT Geotools to aggregate localisation data, bearings, distances, etc. in order to find and localise event and places in a webapp.
 
 Typical usage : 
 - I have the path of a plane and of a boat, I want to find where they both crossed.
