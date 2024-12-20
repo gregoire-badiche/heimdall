@@ -10,24 +10,21 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <link rel="stylesheet" href="style/shell.css">
-    <script src="scripts/app.js"></script>
-    <script type="module" src="scripts/heimdall.js"></script>
+    <script type="module" src="scripts/app.js"></script>
 </head>
 
 <body>
     <div id="map"></div>
-    <div id="app">
-        <div id="app-left">
+    <div id="app-frame">
+        <div id="app" style="width: 500px;">
 
         </div>
-        <div id="app-right">
-
-        </div>
-        <div id="app-top">
-
-        </div>
-        <div id="app-bottom">
-
+        <div id="app-resize"></div>
+        <div id="app-bar">
+            lat/lng:&nbsp;
+            <div id="app-coordinates">
+                0.00000000, 0.00000000
+            </div>
         </div>
     </div>
     <script src="scripts/loader.js"></script>

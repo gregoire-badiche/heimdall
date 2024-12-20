@@ -1,4 +1,14 @@
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    font-family: "JetBrains Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,
+body {
     padding: 0;
     margin: 0;
     width: 100vw;
@@ -15,7 +25,7 @@ html, body {
     z-index: 1;
 }
 
-#app {
+#app-frame {
     position: absolute;
     top: 0;
     left: 0;
@@ -23,8 +33,41 @@ html, body {
     height: 100vh;
     pointer-events: none;
     z-index: 2;
+    display: grid;
+    grid-template-columns: min-content 8px auto;
+    grid-template-rows: auto 25px;
 }
 
-#app > * {
+#app-frame>* {
     pointer-events: initial;
+}
+
+#app {
+    background: #fff;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    min-width: 400px;
+    max-width: 100vw;
+}
+
+#app-resize {
+    transform: translateX(-9px);
+    width: 8px;
+    height: 100%;
+    background: none;
+    cursor: col-resize;
+    user-select: none;
+}
+
+#app-bar {
+    background: #ffffffaa;
+    grid-column: 1/4;
+    grid-row: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
 }
